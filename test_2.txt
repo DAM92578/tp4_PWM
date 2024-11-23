@@ -1,0 +1,9 @@
+
+---> Se midio la señal en el puerto PA6 de la placa nucleo mientras se ejecutaba el programa con la configuracion test_2.
+     Se  observo que el duty cycle de la señal permanecio constante en un valor del 50% y que la frecuencia de la señal fue aumentamdo y    disminuyendo constantemente.
+     (ver fomas de onda en el archivo:formas_de_onda_TST2.pdf)
+     (Ver video en :Carpeta->video: TST_2_forma_de_onda.mp4).
+   
+---> Se conecto un led, junto a la correspondiente resistencia de polarizacion, al puerto PA6 de la placa nucleo. Se pudo observar que el
+     brillo permanecio constante ante las variaciones de la frecuecia de la señal. 
+     (Ver video en :Carpeta->video: TST_2_LED.mp4).

@@ -1,0 +1,27 @@
+
+--->Duty Cycle: Es la relacion entre el periodo de la señal y el tiempo en que la señal se encuentra en estado activo. 
+
+		D = (Periodo/tiempo_señal_activa)
+
+---> Se midio la señal en el puerto PA6 de la placa nucleo mientras se ejecutaba el programa con la configuracion test_1.
+     Se  observo que la frecuencia permanecio constante y que el duty cycle fue aumentamdo y disminuyendo constantemente.
+     (Ver video en :Carpeta->video: TST_1_forma_de_onda.mp4).
+ 
+
+
+--->Calculo teorico de la frecuencia y periodo en funcion de los parametro programados.  
+
+  	>Prescaler = 0
+  	>Counter_Period (#define PERIOD (65535) = 65535   
+  	>Clock = 64Mhz
+
+        	             64 Mhz                                               1
+  	frecuencia = ------------------ = 976.56 HZ               Periodo = ---------- = 1.02 mS
+        	         (0+1)*(1+65535)                                       976.56 HZ
+
+      Se puede observar que los valores de frecuencia y periodo, calculados teoricamente, coninciden con las formas de onda medidas en la   placa Nucleo al correr el  programa con la configuracion test_1 (ver fomas de onda en el archivo:formas_de_onda_TST1.pdf)
+     
+     
+---> Se conecto un led , junto a la correspondiente resistencia de polarizacion, al puerto PA6 de la placa nucleo. Se pudo observar que el
+   brillo del mismo fue aumentado y disminuyendo conforme a las variaciones del duty cycle de la señal.
+   Ver video en :Carpeta->video: TST_1_LED.mp4). 
